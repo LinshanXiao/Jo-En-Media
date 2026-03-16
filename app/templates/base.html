@@ -4,39 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JO-EN Media · E-commerce & Entertainment Ecosystem</title>
-    <!-- 引入外部CSS文件 (style.css) 路径保持不变 -->
     <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
-    <!-- Google Fonts 加载 Inter 字体 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- ===== 导航栏 ===== -->
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">JO-EN Media</div>
-            <div class="nav-links">
-                <a href="{{ url_for('home') }}">Home</a>
-                <a href="{{ url_for('ecommerce') }}">E-commerce</a>
-                <a href="{{ url_for('entertainment') }}">Entertainment</a>
-                <a href="{{ url_for('ip') }}">IP Resources</a>
-                <a href="{{ url_for('cases') }}">Cases</a>
-                <a href="{{ url_for('team') }}">Our Teams</a>
-            </div>
-            <a href="#" class="btn btn-outline" style="padding: 8px 24px;">Contact us</a>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">JO-EN Media</div>
+        <div class="nav-links">
+            <a href="{{ url_for('main.home') }}">Home</a>
+            <a href="{{ url_for('main.ecommerce') }}">E-commerce</a>
+            <a href="{{ url_for('main.entertainment') }}">Entertainment</a>
+            <a href="{{ url_for('main.ip') }}">IP Resources</a>
+            <a href="{{ url_for('main.cases') }}">Cases</a>
+            <a href="{{ url_for('main.team') }}">Our Teams</a>
         </div>
+        <a href="#" class="btn btn-outline" style="padding: 8px 24px;">Contact us</a>
     </div>
+</div>
 
-<!-- Page Content -->
 {% block content %}
 {% endblock %}
 
-<!-- ===== 底部 & 合作 ===== -->
-    <div class="container footer">
+<div class="container footer">
     <div class="footer-links">
-
         <div class="logo" style="font-size: 2.5rem;">JO-EN</div>
 
         <div style="display: flex; gap: 32px; flex-wrap: wrap;">
@@ -45,15 +39,13 @@
             <a href="#" style="color: #ccc; text-decoration: none;">Creator Account Management</a>
             <a href="#" style="color: #ccc; text-decoration: none;">Audience Monetization</a>
         </div>
-
-        
-
     </div>
 
     <div class="copyright">
         © 2026 JO-EN · Empowering the next generation of global brands<br>
         Australia · Japan · South Korea · Vietnam · Malaysia
     </div>
+</div>
 
 </body>
 </html>
