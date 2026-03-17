@@ -1,14 +1,10 @@
 from flask import Flask
-from config import Config
-
 
 def create_app():
-
     app = Flask(__name__)
+    app.secret_key = "your_secret_key_here"
 
-    app.config.from_object(Config)
-
-    from .routes import main
-    app.register_blueprint(main)
+    from . import routes
+    routes.init_app(app)
 
     return app

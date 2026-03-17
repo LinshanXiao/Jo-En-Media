@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Team{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='team.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<section class="team-section">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Core Team Background</h2>
+        </div>
+
+        <div class="team-layout">
+            <div class="team-text">
+                <p>
+                    Our core team comes from diverse industries including media, consulting, and brand marketing, bringing extensive cross-industry experience and a global perspective.
+                </p>
+
+                <p>
+                    Team members have previously worked at leading international companies, contributing strong execution capabilities and innovative thinking to every project. We are committed to delivering high-quality branding and content ecosystems.
+                </p>
+
+                <div class="highlight">
+                    At JO-EN Media, we combine expertise and creativity to drive sustainable growth.
+                </div>
+            </div>
+        </div>
+
+        <div class="company-logos">
+            <div class="logo-item">
+                <img src="{{ url_for('static', filename='images/newclassics.png') }}">
+            </div>
+            <div class="logo-item">
+                <img src="{{ url_for('static', filename='images/accenture.png') }}">
+            </div>
+            <div class="logo-item">
+                <img src="{{ url_for('static', filename='images/ho.png') }}">
+            </div>
+            <div class="logo-item">
+                <img src="{{ url_for('static', filename='images/publics.png') }}">
+            </div>
+        </div>
+
+    </div>
+</section>
+<br>
+<br>
+<br>
+
+
+<!-- 招聘部分 -->
+<section class="recruit-section">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Join Us</h2>
+            
+        </div>
+
+        <div class="jobs">
+
+            <div class="job-card">
+                <h3>Content Creator</h3>
+                <p>Responsible for content planning and creation to enhance brand visibility and audience engagement.</p>
+            </div>
+
+            <div class="job-card">
+                <h3> Marketing</h3>
+                <p>Develop and execute marketing strategies to drive brand growth and campaign performance.</p>
+            </div>
+
+            <div class="job-card">
+                <h3>Frontend Developer</h3>
+                <p>Responsible for website development and user experience optimization.</p>
+            </div>
+
+        </div>
+
+        <div class="apply-box">
+            <h3> Apply Now: hr@jo-enmedia.com</h3>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

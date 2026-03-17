@@ -1,0 +1,62 @@
+.section-title h2 {
+    font-size: 52px;
+    line-height: 1.08;
+    margin-bottom: 18px;
+    font-weight: 800;
+    margin-top: 60px;
+}
+
+.team-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    color: #d9d9d9;
+}
+
+.highlight {
+    font-size: 18px;
+    margin-top: 18px;
+    color: #fff;
+}
+
+.company-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin-top: 40px;
+}
+
+.logo-item {
+    background: #fff;
+    padding: 20px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0;
+}
+
+.logo-item img {
+    max-width: 100%;
+    max-height: 85px;
+    object-fit: contain;
+}
+
+.jobs h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.job-card p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #d9d9d9;
+}
+
+.apply-box h3 {
+    font-size: 22px;
+    margin-top: 30px;
+}
