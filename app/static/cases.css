@@ -95,6 +95,11 @@
     margin-bottom: 40px;
 }
 
+/* ===== Single Image Layout ===== */
+.single-column {
+    grid-template-columns: 1fr;
+}
+
 .two-column {
     grid-template-columns: 1.5fr 1fr;
 }
@@ -130,8 +135,7 @@
 
 .image-card img {
     width: 100%;
-    height: 100%;
-    min-height: 260px;
+    height: 380px;   /* clean fixed height */
     object-fit: cover;
     display: block;
 }
@@ -273,35 +277,29 @@
     margin: 0;
 }
 
-/* ===== Logo Wall ===== */
+/* ===== Logo Wall (Single Image Version) ===== */
 .logo-wall {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+
+    /* 和你整体风格统一 */
+    border: 1px solid rgba(255, 78, 205, 0.2);
+    background: #050505;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
 }
 
-.logo-item {
-    background: #fff;
-    border-radius: 18px;
-    padding: 26px;
-    min-height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: all 0.25s ease;
-}
-
-.logo-item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 32px rgba(255, 78, 205, 0.2);
-}
-
-.logo-item img {
-    max-width: 100%;
-    max-height: 70px;
-    object-fit: contain;
+.logo-wall img {
+    width: 100%;
+    height: auto;
     display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.logo-wall:hover img {
+    transform: scale(1.03);
 }
 
 /* ===== Responsive ===== */
@@ -342,5 +340,10 @@
 
     .text-card {
         padding: 28px 22px;
+    }
+}
+@media (max-width: 768px) {
+    .image-card img {
+        height: 240px;
     }
 }

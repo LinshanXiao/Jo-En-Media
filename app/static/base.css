@@ -179,32 +179,40 @@ body {
     flex-wrap: wrap;
 }
 
+/* Right visual block */
 .hero-visual {
     background: radial-gradient(circle at 30% 50%, #2d2d5e, #0b0b0f);
     border-radius: 48px;
     padding: 20px;
-    height: 100%;
     min-height: 320px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: stretch;
     border: 1px solid #3f3f5e;
     position: relative;
     overflow: hidden;
 }
 
-.hero-visual::after {
-    
-    background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(8px);
-    padding: 16px 32px;
-    border-radius: 60px;
-    font-weight: 600;
-    font-size: 1.2rem;
-    border: 1px solid #f43f5e;
-    color: white;
-    box-shadow: 0 0 40px #c026d3;
+/* Hero image wrapper */
+.hero-image-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
 }
+
+/* Hero image itself */
+.hero-image-link img {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    filter: none;
+}
+
 
 /* 全球实体条 */
 .global-strip {

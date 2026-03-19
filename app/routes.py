@@ -1,14 +1,15 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import smtplib
+import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-COMPANY_EMAIL = "yourcompanyemail@gmail.com"
-COMPANY_EMAIL_PASSWORD = "your_app_password_here"
-RECEIVER_EMAIL = "yourcompanyemail@gmail.com"
+COMPANY_EMAIL = os.environ.get("COMPANY_EMAIL")
+COMPANY_EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
+RECEIVER_EMAIL = os.environ.get("RECEIVER_EMAIL")
 
 def init_app(app):
     @app.route("/")

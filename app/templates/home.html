@@ -16,7 +16,9 @@
                 
             </div>
             <div class="hero-visual">
-                <!-- 背景装饰，伪元素展示核心文案 (CSS 中已包含) -->
+            <a href="{{ url_for('home') }}" class="hero-image-link">
+                <img src="{{ url_for('static', filename='images/home.jpg') }}" alt="studio pic">
+            </a>
             </div>
         </div>
     </div>
@@ -113,7 +115,7 @@
 
         <!-- E-commerce Card -->
         <div class="dual-card">
-            <div class="tag">🛒 Monetization Engine · Multi-Category E-commerce</div>
+            <div class="tag"> Monetization Engine · Multi-Category E-commerce</div>
             <h3 style="font-size: 2rem; margin-bottom: 16px;">Independent Stores + Platform Ecosystem</h3>
             <p style="color: #b0b0c8; margin-bottom: 32px;">
                 Beauty · Intimates · Automotive · Food · Apparel · One-stop global expansion solutions
@@ -128,7 +130,7 @@
 
         <!-- Entertainment Card -->
         <div class="dual-card">
-            <div class="tag">🎬 Traffic Engine · TikTok Entertainment</div>
+            <div class="tag"> Traffic Engine · TikTok Entertainment</div>
             <h3 style="font-size: 2rem; margin-bottom: 16px;">MCN Network · Talent Incubation</h3>
             <p style="color: #b0b0c8; margin-bottom: 32px;">
                 Focused on TikTok Australia live commerce, building a complete pipeline from emerging creators to professional talent
